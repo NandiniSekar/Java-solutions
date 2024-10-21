@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	    	int resultlength=0;
 		int resultstart=0;
 	    int n = s.length();
-	    if(n>=2)
+	    if(n<=2)
 	    {
 	        return s;
 	    }
