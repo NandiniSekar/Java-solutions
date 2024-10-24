@@ -1,0 +1,28 @@
+* Introduce yourself :
+I have been working for Cognizant for the past 10 years into Java & SQL App/Prod support. I have experience in Insurance & Healthcare domains.
+I have experience of 4 years in leading a team of around 8 members who delivers L2 and L3 support. Recent times I have been handling 2 different kinds of Java application.
+One is customer facing app & other is WAS server based one. Have experience in Splunk to check logs. Have exp in BMC, SDM, Servicenow & JIRA as well.
+
+*Project Explanation:
+Client is an Insurance service provider. We deal with all different LOB's(Line Of Business) like Auto, property, Finance , Life & Commercial. Application is built 
+up with .net, Java & Mainframe technologies. I was supporting Java portions alone. This customer facing app is hosted in cloud-PCF (Pivotal Cloud Foundry). 
+The server app acts as an internal app, where it process the requests from MF batch jobs. Various rules are setup for data correction, that will be checked in this app.
+
+The issues which are reported will differ respectively based on applications. Server app(DQ) will be full of Data corrections & Service/server based.
+The issues reported for Customer facing app will be involving checking the app flow, why the data is incorrectly populating, checking logs, Vendor co-ordination,
+SOP's , data fixes in SQL, konwledge gap for users & things like that.
+
+*Recent Enhancements:
+1. Wrote small function to remove the numbers after decimal point, to fix the null pointer exception,
+2. Did migration of application from SVN to GIT successfully
+
+*Challenges faced:
+1. Class not found, Class def not found..got these kind off exceptions while adding the dependencies in the project
+2. Had issues while deploying & migrating the projects
+3. Due to incorrect server patching, the property files ot messed up & app went down completely.
+Identified that , its using incorrect version of prop files & the fixed it by re-deployment.
+4. Had many issues in jobs, which are updating the file or data via FTP's. 
+Those can be checked in logs & corrected.
+
+
+
