@@ -1,0 +1,30 @@
+class Solution {
+    public int sumOfUnique(int[] nums) {
+HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
+for(int num:nums)
+{
+    if(hm.containsKey(num))
+    {
+        int count = hm.get(num);
+        count = count + 1;
+        hm.replace(num,count);
+    }
+    else
+    {
+        hm.put(num,1);
+    }
+}
+
+int sum = 0;
+for(int value:hm.keySet())
+{
+    if(hm.get(value)==1)
+    {
+        sum = sum + value;
+    }
+}
+
+//System.out.println(sum);
+return sum;
+    }
+}
