@@ -1,0 +1,25 @@
+public class ColumnSum {
+    public static void main(String[] args) {
+        // Example 2D array
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        // Array to hold the sum of each column
+        int[] columnSum = new int[array[0].length];
+
+        // Iterate over each column and add the values
+        for (int col = 0; col < array[0].length; col++) {
+            for (int row = 0; row < array.length; row++) {
+                columnSum[col] += array[row][col];
+            }
+        }
+
+        // Print the column-wise sums
+               for (int i = 0; i < columnSum.length; i++) {
+            System.out.println(columnSum[i]);
+        }
+    }
+}
