@@ -40,4 +40,36 @@ public class Lengthoflongestunique {
 	
 	
 }
- 
+
+####################################################################################################################3
+	/******************************************************************************
+String str = "abchdieab"; o/p = abchdie & its length
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		
+		String str = "aabbbccccccdddee";
+		char[] ch = str.toCharArray();
+		int count = 1;
+		int maxlength = 0;
+		
+		for(int i=1;i<ch.length;i++)
+		{
+		    if(ch[i-1] == ch[i])
+		    {
+		        count++;
+		    }
+		    else{
+		       
+		        maxlength = Math.max(count,maxlength);
+		         count=1;
+		    }
+		}
+		
+		System.out.println(maxlength);
+		
+	}
+}
